@@ -85,7 +85,7 @@ nav.scrolled {
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    color: black;
     position: relative;
     overflow: hidden;
 }
