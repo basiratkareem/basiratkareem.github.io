@@ -1,62 +1,256 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Basirat Kareem Portfolio</title>
-  <meta name="description" content=“Basirat Kareem - Software QA Engineer. Technical Support Engineer. DevOps & Cloud Engineer in Training. AWS SAA, KCNA." />
-  <!-- optional: add favicon, stylesheet links -->
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;padding:32px;background:#f7f7fb;color:#111}
-    header{max-width:900px;margin:0 auto}
-    h1{font-size:2rem;margin:.2rem 0}
-    .hero{background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.06)}
-    .links a{margin-right:12px}
-    section{max-width:900px;margin:24px auto}
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-    .card{background:#fff;padding:16px;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.04)}
-    footer{max-width:900px;margin:40px auto;text-align:center;color:#666}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basirat Kareem</title>
+    <meta name="description" content="Software QA Engineer transitioning to DevOps with expertise in test automation, D365 FinOps, and infrastructure as code.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>Basirat Kareem - Software QA Engineer. Technical Support Engineer. DevOps & Cloud Engineer in Training. AWS SAA, KCNA.</h1>
-    <p>I combine a QA-first mindset and technical support background with hands-on DevOps & Cloud training. <strong>Open to collaboration and learning opportunities.</strong></p>
-    <p class="links">
-      <a href="https://github.com/basiratkareem”>GitHub</a>
-      <a href="https://www.linkedin.com/in/basiratkareem”>LinkedIn</a>
-      <a href="mailto:basiratkareem18@gmail.com”>Email</a>
-    </p>
-  </header>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Basirat Kareem</a>
+            <button class="mobile-toggle" id="mobileToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <section>
-    <h2>Selected Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>CI/CD Pipeline</h3>
-        <p>GitHub Actions pipeline that builds, tests, and deploys a Dockerized web app to EC2.</p>
-      </div>
-      <div class="card">
-        <h3>Docker + Compose</h3>
-        <p>Multi-service Docker Compose app (web + api + db) for reproducible dev environments.</p>
-      </div>
-      <div class="card">
-        <h3>Kubernetes Deployment</h3>
-        <p>KCNA-level Kubernetes demo: NGINX app deployed with Deployment & Service manifests.</p>
-      </div>
-    </div>
-  </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Building Reliable Systems Through Quality & Automation</h1>
+            <h2>Software QA Engineer | DevOps Enthusiast | D365 FinOps Support Engineer</h2>
+            <p>I ensure software works before it reaches users and increasingly, I'm automating that process. Currently working as a Software QA Engineer while expanding into DevOps through fellowship programs and hands-on learning.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <h2>Experience & Certifications</h2>
-    <p><strong>Software QA Engineer</strong> • Manual & API testing • Automation Testing • Postman • Documentation (Test Plan, Test Scenarion, Test Cases)</p>
-    <p><strong>Former</strong> Dynamics 365 FinOps Support • Troubleshooting, debugging & logs, customer support</p>
-    <p><strong>Certs:</strong> AWS SAA, AWS Cloud Practitioner, KCNA</p>
-  </section>
+    <section id="about">
+        <h2 class="section-title">From Quality Assurance to Quality Automation</h2>
+        <p class="section-subtitle">My journey connects quality, systems, and automation</p>
+        <div class="about-content">
+            <div class="about-card">
+                <h3>The Journey</h3>
+                <p>I learned how enterprise systems fail (and succeed) through D365 FinOps support, I started ensuring software quality manually, and now I'm learning to automate both quality and infrastructure through DevOps.</p>
+            </div>
+            <div class="about-card">
+                <h3>What I Bring</h3>
+                <p><strong>QA Mindset:</strong> I think about what can break before it does<br>
+                <strong>System Knowledge:</strong> Enterprise support taught me how complex systems behave in production<br>
+                <strong>Automation Focus:</strong> I'm learning to codify quality checks and infrastructure as code</p>
+            </div>
+            <div class="about-card">
+                <h3>Currently Learning</h3>
+                <p>CI/CD pipelines and automation, Infrastructure as Code (Terraform, Ansible), Container orchestration (Docker, Kubernetes), Cloud platforms (AWS/Azure), and Monitoring & observability tools.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <small>© <span id="year"></span> Basirat Kareem - Built with GitHub Pages</small>
-    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
-  </footer>
+    <section id="skills">
+        <h2 class="section-title">Technical Toolkit</h2>
+        <p class="section-subtitle">A comprehensive skill set spanning testing, enterprise systems, and modern DevOps practices</p>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Quality & Testing</h3>
+                <ul class="skill-list">
+                    <li>Manual & Automated Testing</li>
+                    <li>Test Case Design</li>
+                    <li>Bug Tracking & Reporting</li>
+                    <li>API Testing (Postman)</li>
+                    <li>Performance Testing (K6 by Grafana)</li>
+                    <li>Regression Testing</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Enterprise Systems</h3>
+                <ul class="skill-list">
+                    <li>D365 Finance & Operations</li>
+                    <li>System Support & Troubleshooting</li>
+                    <li>User Support & Documentation</li>
+                    <li>Database Queries (SQL)</li>
+                    <li>Production Issue Resolution</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>DevOps & Automation</h3>
+                <ul class="skill-list">
+                    <li>CI/CD (Jenkins, GitHub Actions)</li>
+                    <li>Version Control (Git, GitHub)</li>
+                    <li>Containerization (Docker)</li>
+                    <li>Infrastructure as Code (Terraform)</li>
+                    <li>Linux/Bash Scripting</li>
+                    <li>Cloud Platforms (AWS/Azure)</li>
+                    <li>Monitoring Tools</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Building expertise across quality assurance and enterprise systems</p>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">Software QA Engineer</h3>
+                <ul>
+                    <li>Design and execute comprehensive test plans for web and mobile applications</li>
+                    <li>Identify, document, and track bugs through resolution using OpenProject, Qase</li>
+                    <li>Collaborate with developers to improve code quality and reduce defects</li>
+                    <li>Contribute to CI/CD pipeline improvements for faster deployment cycles</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">D365 FinOps Support Engineer</h3>
+                </div>
+                <ul>
+                    <li>Provided technical support for Microsoft Dynamics 365 Finance & Operations</li>
+                    <li>Troubleshot production issues affecting critical business operations</li>
+                    <li>Analyzed system logs and database queries to identify root causes</li>
+                    <li>Created detailed documentation for common issues and solutions</li>
+                    <li>Worked with cross-functional teams to resolve complex system problems</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">What I'm Building</h2>
+        <p class="section-subtitle">Projects showcasing my progression from testing to automation to infrastructure</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <span>Testing</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Automated Testing Framework</h3>
+                    <p class="project-description">Built a comprehensive automated test suite for web applications with parallel execution and detailed reporting.</p>
+                    <div class="project-tags">
+                        <span class="tag">Selenium</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Pytest</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <span>CI/CD</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">CI/CD Pipeline Implementation</h3>
+                    <p class="project-description">Created a complete deployment pipeline with automated testing, building, and deployment to cloud infrastructure.</p>
+                    <div class="project-tags">
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <span>IaC</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Infrastructure as Code</h3>
+                    <p class="project-description">Provisioned and managed cloud infrastructure using Terraform with version control and automated deployments.</p>
+                    <div class="project-tags">
+                        <span class="tag">Terraform</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">IaC</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <span>Monitoring</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Monitoring Dashboard</h3>
+                    <p class="project-description">Built a real-time monitoring solution for application health metrics, logs, and performance tracking.</p>
+                    <div class="project-tags">
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <span>K8s</span>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Container Orchestration Lab</h3>
+                    <p class="project-description">Deployed microservices architecture using Kubernetes with automated scaling and load balancing.</p>
+                    <div class="project-tags">
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Microservices</span>
+                    </div>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learning">
+        <h2 class="section-title">Continuous Growth</h2>
+        <p class="section-subtitle">Actively expanding my skills through structured learning and hands-on practice</p>
+        <div class="learning-content">
+            <div class="learning-item">
+                <h3>DevOps Fellowship</h3>
+                <h4>Women Techsters Fellowship | 2025</h4>
+                <ul>
+                    <li>Hands-on training in CI/CD, containerization, and cloud infrastructure</li>
+                    <li>Collaborative projects with fellow learners and real-world scenarios</li>
+                    <li>Mentorship from industry professionals with DevOps expertise</li>
+                </ul>
+            </div>
+            <div class="learning-item">
+                <h3>Courses & Certifications</h3>
+                <ul>
+                    <li>AWS Solutions Architect Associate</li>
+                    <li>Kubernetes Fundamentals</li>
+                </ul>
+            </div>
+            <div class="learning-item">
+                <h3>Why DevOps?</h3>
+                <p>D365 support showed me how critical automation is at scale. QA taught me to think about reliability. DevOps is where these interests converge—ensuring quality through automated, reliable infrastructure and delivery pipelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+            <p>I'm always interested in opportunities where quality meets automation, whether in QA, DevOps, or Site Reliability Engineering roles. Open to collaboration, mentorship, and interesting conversations about building reliable systems.</p>
+            <div class="contact-links">
+                <a href="mailto:basiratkareem18@gmail.com" class="contact-icon" title="Email">Email</a>
+                <a href="https://linkedin.com/in/basiratkareem" class="contact-icon" title="LinkedIn" target="_blank">LinkedIn</a>
+                <a href="https://github.com/basiratkareem" class="contact-icon" title="GitHub" target="_blank">GitHub</a>
+            </div>
+            <a href="#" class="btn btn-primary">Download Resume</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Basirat Kareem. Built with passion for quality and automation.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
