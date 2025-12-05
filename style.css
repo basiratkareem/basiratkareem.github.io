@@ -90,6 +90,15 @@ nav.scrolled {
     overflow: hidden;
 }
 
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 0 0 300px;
+}
+
+
 .hero::before {
     content: '';
     position: absolute;
@@ -107,6 +116,8 @@ nav.scrolled {
     padding: 2rem;
     position: relative;
     z-index: 1;
+    align-items: center;
+    gap: 6rem;
 }
 
 .hero h1 {
@@ -129,6 +140,19 @@ nav.scrolled {
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.4s both;
 }
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
+    border: 4px solid rgba(255,255,255,0.3);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    background-image: url('pic.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 .cta-buttons {
     display: flex;
